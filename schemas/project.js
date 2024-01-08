@@ -1,7 +1,7 @@
 export default {
-  name: 'course',
+  name: 'project',
   type: 'document',
-  title: 'Course Voucher',
+  title: 'Project',
   fields: [
     {
       name: 'name',
@@ -10,33 +10,26 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'code',
+      name: 'videoLink',
       type: 'string',
-      title: 'Voucher Code',
+      title: 'Video link',
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'link',
+      name: 'sourceCode',
       type: 'string',
-      title: 'Course link',
+      title: 'Source Code Link',
+    },
+    {
+      name: 'releaseDate',
+      type: 'date',
+      title: 'Release Date',
       validation: (Rule) => Rule.required(),
     },
     {
       name: 'thumbnail',
       type: 'image',
       title: 'Course Thumbnail',
-      validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'discountedPrice',
-      type: 'number',
-      title: 'Discounted Price',
-      validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'originalPrice',
-      type: 'number',
-      title: 'Original Price',
       validation: (Rule) => Rule.required(),
     },
   ],
